@@ -17,7 +17,7 @@ class CategoryTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        foreach (range(1,20) as $index){
+        foreach (range(1,25) as $index){
         Category::create([
             'category'=>$faker->name,
             'category_slug'=>$faker->name,
