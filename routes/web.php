@@ -20,6 +20,7 @@ Route::get('/product', 'SiteController@product')->name('product');
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('admin/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
     Route::get('brand/add-brand', [App\Http\Controllers\BrandController::class, 'addBrand'])->name('add-brand');
     Route::post('brand/save-brand', [App\Http\Controllers\BrandController::class, 'saveBrand'])->name('save-brand');
     Route::get('brand/manage-brand', [App\Http\Controllers\BrandController::class, 'manageBrand'])->name('manage-brand');
@@ -42,4 +43,5 @@ Route::middleware(['auth'])->group(function () {
 
 
     Route::get('category/manage-sub-sub-category', [App\Http\Controllers\SubsubcategoryController::class, 'manageSubsubCategory'])->name('manage-subsubcategory');
+
 });

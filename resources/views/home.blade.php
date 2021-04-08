@@ -10,42 +10,264 @@
     </div>
 </div>
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-{{-- <div class="row animated fadeInUp">
-    <div class="row">        
-                <div class="col-sm-12 col-md-8 col-md-offset-2">                    
-                    <div class="panel b-primary bt-md">
-                        <div class="panel-content">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <h4>Brand Add Form</h4>
-                                </div>
-                                <div class="col-xs-6 text-right">
-                                    <a href="{{ route('manage-brand') }}" class="btn btn-primary">All Brand</a>
-                                </div>
+<div class="row animated fadeInUp">
+    <div class="row">
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--WIDGETBOX-->
+        <div class="col-sm-12 col-md-4">
+            <div class="panel widgetbox wbox-2 bg-scale-0">
+                <a href="#">
+                    <div class="panel-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="icon fa fa-globe color-darker-1"></span>
                             </div>
-                            <div class="row">                               
-                                <div class="col-md-12">
-                                    
-                                    <form class="form-horizontal" method="POST" action="{{ route('save-brand') }}">
-                                        @csrf
-                                        <div class="form-group">
-                                            <label for="brand_name" class="col-sm-3 control-label">Brand Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="brand_name" placeholder="Brand Name" name="brand_name" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-3 col-sm-9">
-                                                <button type="submit" class="btn btn-primary">Save Brand</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                            <div class="col-xs-8">
+                                <h4 class="subtitle color-darker-1">Views</h4>
+                                <h1 class="title color-primary"> 154.609</h1>
                             </div>
                         </div>
                     </div>
+                </a>
+            </div>
+            <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
+                <a href="#">
+                    <div class="panel-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="icon fa fa-user color-darker-2"></span>
+                            </div>
+                            <div class="col-xs-8">
+                                <h4 class="subtitle color-darker-2">New Users</h4>
+                                <h1 class="title color-w"> 105</h1>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="panel widgetbox wbox-2 bg-darker-2 color-light">
+                <a href="#">
+                    <div class="panel-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span class="icon fa fa-envelope color-lighter-1"></span>
+                            </div>
+                            <div class="col-xs-8">
+                                <h4 class="subtitle color-lighter-1">New Messages</h4>
+                                <h1 class="title color-light"> 124</h1>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--AREA CHART-->
+        <div class="col-sm-12 col-md-8">
+            <div class="panel">
+                <div class="panel-content">
+                    <h5><b>First semester</b> Sells</h5>
+                    <p class="section-text">Lorem ipsum <span class="highlight">dolor sit amet</span> consectetur adipisicing elit. Assumenda fugit inventore ipsam nam, qui voluptatibus</p>
+                    <canvas id="area-chart" width="400" height="160"></canvas>
                 </div>
-                <!--STRIPE-->
+            </div>
+        </div>
     </div>
-</div> --}}
+    <div class="row">
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--TO DO LIST-->
+        <div class="col-sm-12 col-md-4">
+            <div class="panel b-primary bt-md">
+                <div class="panel-content p-none">
+                    <div class="widget-list list-to-do">
+                        <h4 class="list-title">To do List</h4>
+                        <button class="add-item btn btn-o btn-primary btn-xs"><i class="fa fa-plus"></i></button>
+                        <ul>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h1" value="option1">
+                                    <label class="check" for="check-h1">Accusantium eveniet ipsam neque</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h2" value="option1" checked>
+                                    <label class="check" for="check-h2">Lorem ipsum dolor sit</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h3" value="option1">
+                                    <label class="check" for="check-h3">Dolor eligendi in ipsum sapiente</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h4" value="option1">
+                                    <label class="check" for="check-h4">Natus recusandae vel</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h5" value="option1">
+                                    <label class="check" for="check-h5">Adipisci amet officia tempore ut</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-custom checkbox-primary">
+                                    <input type="checkbox" id="check-h6" value="option1">
+                                    <label class="check" for="check-h6">Possimus repellat repellendus</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--TABS WITH TABLET-->
+        <div class="col-sm-12 col-md-8">
+            <div class="tabs mt-none">
+                <!-- Tabs Header -->
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#home" data-toggle="tab">Employees</a></li>
+                    <li><a href="#profile" data-toggle="tab">Sells</a></li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings" data-toggle="tab"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                </ul>
+                <!-- Tabs Content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Olivia Liang</td>
+                                        <td>Support Engineer</td>
+                                        <td>Singapore</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sakura Yamamoto</td>
+                                        <td>Support Engineer</td>
+                                        <td>Tokyo</td>
+                                        <td>37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>Singapore</td>
+                                        <td>29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>New York</td>
+                                        <td>27</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <p><b>Profile</b> content</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus
+                            nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla
+                            libero. Donec iaculis sit amet nibh non laoreet.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="messages">
+                        <p><b>Message</b> content</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus
+                            nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla
+                            libero. Donec iaculis sit amet nibh non laoreet.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="settings">
+                        <p><b>Settings</b> content</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae tellus tincidunt, mattis odio eu, accumsan quam. Duis ultricies, erat nec suscipit mattis, risus est efficitur enim, sed finibus lacus
+                            nisi et mauris. Ut sed accumsan ipsum. Aliquam vel nibh et turpis euismod porttitor. In diam odio, cursus eget faucibus quis, efficitur id erat. Aliquam euismod in justo sit amet ornare. Quisque eu fringilla
+                            libero. Donec iaculis sit amet nibh non laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--PIE CHART-->
+        <div class="col-sm-12 col-md-4">
+            <div class="panel">
+                <div class="panel-content">
+                    <h5><b>Lorem ipsum dolor sit</b></h5>
+                    <p>Dolor sit amet <span class="highlight">consectetur</span> erte</p>
+                    <canvas id="pie-chart" width="400" height="260"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!--GALLERY-->
+        <div class="col-sm-12 col-md-8">
+            <div class=" gallery-wrap">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="first photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_1.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="second photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_2.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="third photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_3.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="fourth photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_4.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="fifth photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_5.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="sixth photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_6.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="seventh photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_1.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="images/helsinki-lg.jpg" title="By John Doe">
+                            <img alt="eighth photo" src="{{ asset('/') }}assets/admin/images/avatar/avatar_2.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

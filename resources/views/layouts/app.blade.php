@@ -19,6 +19,7 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/') }}assets/admin/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('/') }}assets/admin/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}assets/admin/vendor/animate.css/animate.css">
     <!--SECTION css-->
     <!--dataTable-->
@@ -45,7 +46,7 @@
             <div class="leftside-header">
                 <div class="logo">
                     <a href="{{ route('home') }}" class="on-click">
-                        <img alt="logo" src="{{ asset('/') }}assets/admin/images/header-logo.png" />
+                        <h3 style="color: white; font-weight:bold;">E-Shop | BD</h3>
                     </a>
                 </div>
                 <div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open"
@@ -69,7 +70,7 @@
                     <div class="user-header-wrap">
                         <div class="user-photo">
                             <img alt="profile photo"
-                                src="{{ asset('/') }}assets/admin/images/avatar/avatar_user.jpg" />
+                                src="{{ asset('/') }}assets/admin/images/avatar/nayem2.jpg" />
                         </div>
                         <div class="user-info">
                             <span class="user-name">{{ Auth::user()->name }}</span>
@@ -81,7 +82,7 @@
                     <div class="user-options dropdown-box">
                         <div class="drop-content basic">
                             <ul>
-                                <li> <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                                <li> <a href="{{ route('profile') }}"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
 
                             </ul>
                         </div>
@@ -92,7 +93,7 @@
                 <div class="header-section">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();" data-toggle="tooltip" data-placement="left"
-                        title="Logout"><i class="fa fa-sign-out log-out" aria-hidden="true"></i></a>
+                        title="Logout"><i class="fas fa-sign-out-alt log-out" aria-hidden="true"></i></a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
@@ -139,7 +140,7 @@
                                  <!--Brand-->
                                  <li
                                  class="has-child-item close-item {{ request()->is('category/*') ? 'open-item' : '' }}">
-                                 <a><i class="fa fa-list" aria-hidden="true"></i><span>Categories</span> </a>
+                                 <a><i class="fa fa-list-alt" aria-hidden="true"></i><span>Categories</span> </a>
                                  <ul class="nav child-nav level-1">
 
                                      <li class="{{ request()->is('category/manage-category','category/add-category') ? 'active-item' : '' }}">

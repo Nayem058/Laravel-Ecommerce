@@ -38,9 +38,8 @@ class CategoryController extends Controller
 
         Session::flash('success', 'Category Delete Successfully');
         return back();
-
-
     }
+    
     public function categoryStatus($id,$status){
         $cat= Category::find($id);
         $cat->status = $status;

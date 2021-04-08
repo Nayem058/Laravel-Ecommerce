@@ -15,7 +15,7 @@ $(function () {
     "hideMethod": "fadeOut"
     };
 
-    toastr.info('Enjoy it!', '<h5 style="margin-top: 0px; margin-bottom: 5px;"><b>Smart Soft IT</b></h5>');
+    toastr.info('Shop Here !', '<h5 style="margin-top: 0px; margin-bottom: 5px;"><b>E-Shop | Bangladesh</b></h5>');
 
     //AREA CHART EXAMPLE
     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
