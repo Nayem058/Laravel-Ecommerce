@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2021 at 12:42 PM
+-- Generation Time: Apr 18, 2021 at 12:43 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -61,7 +61,7 @@ INSERT INTO `brands` (`id`, `brand_name`, `brand_slug`, `status`, `created_at`, 
 (17, 'Jena Nitzsche', 'Mrs. Breanna Krajcik II', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
 (18, 'Johnathon Olson III', 'Jacey Bogisich DVM', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
 (19, 'Ida Olson', 'Jalon O\'Keefe', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(20, 'Ayla Pollich II', 'Mrs. Novella Pouros', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL);
+(20, 'Ayla Pollich', 'ayla-pollich', 1, '2021-04-07 01:31:48', '2021-04-11 03:09:42', NULL);
 
 -- --------------------------------------------------------
 
@@ -84,31 +84,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `category_slug`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Jameson Beier', 'Zackery Deckow PhD', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(2, 'Chasity Bradtke Sr.', 'Fanny Heaney', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(3, 'Ophelia Jacobs', 'Aileen Shanahan', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(4, 'Hertha Prohaska', 'Mr. Arvel Langworth', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(5, 'Dorian Bartoletti Sr.', 'Wayne Feil II', 1, '2021-04-07 01:31:48', '2021-04-07 01:31:48', NULL),
-(6, 'Lenna Beahan', 'Miss Earline Orn DDS', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(7, 'Josianne Friesen', 'Prof. Cassandre Eichmann', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(8, 'Carmine Wolff', 'Prof. Wyman Ondricka', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(9, 'Miss Esta Turcotte', 'Ms. Alba Tillman', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(10, 'Mrs. Trinity Hane IV', 'Abigail Treutel', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(11, 'Horace Rogahn', 'Cleora Mraz I', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(12, 'Jordy Osinski', 'Prof. Cristina Rowe', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(13, 'Landen Sporer', 'Miss Dolores Fritsch', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(14, 'Mr. Giovanny Heidenreich MD', 'Domenic Bode II', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(15, 'Elza Kuphal', 'Cali Breitenberg', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(16, 'Candice Kiehn', 'Filomena Wisoky DVM', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(17, 'Llewellyn Schimmel', 'Erik Carroll', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(18, 'Alvina Smitham', 'Florida Mills', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(19, 'Dr. Jesus Schamberger I', 'Dr. Cecile Hodkiewicz', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(20, 'Darby Keebler', 'Bradly O\'Kon', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(21, 'Prof. Sabina Von PhD', 'Prof. Helena Cummings', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(22, 'Claire Yundt', 'Columbus Bayer', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(23, 'Jayden Cronin', 'Kaylee Crist', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(24, 'Toni Osinski', 'Hailie Barton', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL),
-(25, 'Favian Osinski', 'Roscoe Smith', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49', NULL);
+(1, 'Mobile', '', 1, '2021-04-14 11:03:26', '2021-04-14 11:08:27', '2021-04-14 11:08:27'),
+(2, 'freeze', '', 1, '2021-04-14 11:03:33', '2021-04-14 11:03:47', NULL),
+(3, 'Motorbikes', '', 1, '2021-04-14 11:03:38', '2021-04-14 11:03:47', NULL);
 
 -- --------------------------------------------------------
 
@@ -182,26 +160,9 @@ CREATE TABLE `sub_categories` (
 --
 
 INSERT INTO `sub_categories` (`id`, `cat_id`, `sub_cat`, `status`, `created_at`, `updated_at`) VALUES
-(1, '9', 'Miss Dora Barton', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49'),
-(2, '6', 'Maxime Tillman', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49'),
-(3, '7', 'Sterling Hodkiewicz', 1, '2021-04-07 01:31:49', '2021-04-07 01:31:49'),
-(4, '2', 'Harmony Hodkiewicz', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(5, '7', 'Prof. Ada Bradtke', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(6, '2', 'Missouri Legros', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(7, '6', 'Kaia Blanda', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(8, '8', 'Jaylen Doyle', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(9, '8', 'Dr. Lonnie Denesik', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(10, '3', 'Flavio Kuhlman', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(11, '3', 'Jamil Grant V', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(12, '8', 'Prof. Willa Emard', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(13, '7', 'Dr. Albert Torp', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(14, '3', 'Miss Elisabeth Kuhlman IV', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(15, '8', 'Michaela Crona Jr.', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(16, '1', 'Nikki Bayer I', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(17, '7', 'Jamil Schaefer', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(18, '6', 'Verda Kuvalis', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(19, '1', 'Danial Schmidt I', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50'),
-(20, '3', 'Cierra Blick', 1, '2021-04-07 01:31:50', '2021-04-07 01:31:50');
+(1, '2', 'Walton', 0, '2021-04-14 11:04:00', '2021-04-14 11:04:00'),
+(2, '1', 'Samsung', 0, '2021-04-14 11:04:15', '2021-04-14 11:04:15'),
+(3, '3', 'suzuki', 0, '2021-04-14 11:04:29', '2021-04-14 11:04:29');
 
 -- --------------------------------------------------------
 
@@ -300,7 +261,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -318,7 +279,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `sub_categories`
 --
 ALTER TABLE `sub_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`

@@ -44,7 +44,7 @@
                                     @foreach ($data as $row)
                                         <tr>
                                             <td>{{ $serial++ }}</td>
-                                            <td>{{ $row->category->category }} > {{ $row->sub_cat }}</td>
+                                            <td>{{ $row->sub_cat  }}</td>
                                             <td>
                                                 <input type="checkbox" data-toggle="toggle" data-on="Active"
                                                     data-off="Inactive" id="categoryStatus" data-id="{{ $row->id }}"
@@ -52,10 +52,10 @@
                                             </td>
                                             <td>
                                                 <a href="{{ route('edit-brand', $row->id) }}"
-                                                    class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a>
+                                                class="btn btn-sm btn-warning"><i class="fa fa-pencil-alt"></i></a>
 
-                                                <a href="{{ route('delete-category', $row->id) }}"
-                                                    class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                                <a href="{{ route('delete-sub-category', $row->id) }}"
+                                                class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i></a>
                                             </td>
                                         </tr>
                                     @endforeach

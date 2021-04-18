@@ -47,6 +47,21 @@ class CategoryController extends Controller
         return response()->json(['message'=>'success']);
     }
 
+    public function edit($id){
+        $row = Category::find($id);
+        return view('admin.category.category_edit',compact('row'));
+    }
+
+    public function updateCategory(Request $request){
+        $category = Category::find($request->id);
+        $category ->category = $request->category;
+        $category ->category_slug = $this->slug_generator($request->category);
+        $category ->save();
+
+        Session::flash('success','Category Update Success');
+        return back();
+    }
+
    
     public function slug_generator($string){
         $string= str_replace(' ','-',$string);

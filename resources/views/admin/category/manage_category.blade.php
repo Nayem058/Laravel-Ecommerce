@@ -51,11 +51,11 @@
                                                     {{ $row->status == 1 ? 'checked' : '' }}>
                                             </td>
                                             <td>
-                                                <a href="{{ route('edit-brand', $row->id) }}"
-                                                    class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a>
+                                                <a href="{{ route('edit-category', $row->id) }}"
+                                                    class="btn btn-sm btn-warning"><i class="fa fa-pencil-alt"></i></a>
 
                                                 <a href="{{ route('delete-category', $row->id) }}"
-                                                    class="btn btn-sm btn-danger"><i class="fa fa-trash-o"></i></a>
+                                                    class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i></a>
                                             </td>
                                         </tr>
                                     @endforeach

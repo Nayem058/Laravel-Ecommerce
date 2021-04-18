@@ -10,7 +10,7 @@ use Session;
 class SubcategoryController extends Controller
 {
     public function manageSubCategory(){
-        $data = SubCategory:: with('category')->get();
+        $data = SubCategory::with('categoryName')->get();
         return view('admin.category.manage_sub_category',compact('data'));
     }
 
@@ -33,5 +33,14 @@ class SubcategoryController extends Controller
       Session::flash('success','Category Save Successfully');
       return back();
 
+    }
+
+
+    public function delete($id){
+        $category= SubCategory::find($id);
+        $category->delete();
+
+        Session::flash('succcess','Category Delete Successfully');
+        return back();
     }
 }
